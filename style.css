@@ -1,0 +1,64 @@
+h2 {
+    
+}
+
+td {
+
+}
+button{
+    
+}
+
+body {
+     background-color: rgba(0,100,255,0.2);
+    
+}
+
+p{
+    color: gray;
+}
+h1, h2,h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+nav {
+    margin: 0px auto;
+    width: 150px;
+}
+
+img {
+   max-width: 200px;
+}
+
+.widget {
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(200,200,200,.2) ;
+    border-radius: 10px;
+    border: 2px solid black; 
+}
+
+
+button {
+    margin: 10px auto;
+    background: rgba(0,255,100,0.7);
+    width: 100%;
+    padding: 7% 0px;
+    border-radius: 5px;
+    font-size: 1em;
+    
+}
+
+#hiddenButton {
+    width: 50%;
+    max-width: 300px;
+    padding: 3vh 0px;
+}
+
+a, a.visited {
+    color: gray;
+    text-decoration: none;
+}

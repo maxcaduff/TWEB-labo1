@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css" title="style" />
+        <title>Bienvenue</title>
+        <style type="text/css"></style>
+    </head>
+    
+    <body>
+        
+        <script> 
+            
+            var clicked = false ;
+           
+            function superFonction() {
+                if (!clicked) {
+                    document.getElementById("toReplace").setAttribute("src","img.gif") ;
+                    setTimeout(function(){(document.querySelector('button').innerHTML = "Told you.");
+                                         document.getElementById('hiddenButton').style.display = "block";
+                                         clicked = true;}, 3000);
+                    
+                }
+            }
+            function superFonction2() {
+                if (clicked) {
+                    document.getElementById("toReplace").setAttribute("src","img.jpg") ;
+                    document.querySelector('button').innerHTML = "They are back!"
+                    setTimeout(function(){(document.querySelector('button').innerHTML = "Don't click again!")}, 2000);
+                    document.getElementById('hiddenButton').style.display = "none";
+                    clicked = false;
+                    
+                }
+            }
+            
+            
+        </script>
+        
+        <header>
+                <h1>useless website created for the TWEB course</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">useless menu</a>
+                    </li>
+                    <li>
+                    <a href="#">useless menu bis</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id = "accueil" >
+            
+            <table class="widget">
+                <tr class="top">
+                    <td><img id="toReplace" src="img.jpg" alt="super image"/></td>
+                    <td colspan="3">
+                        <h2>super title</h2>
+                        <h3>super subtitle</h3>
+                        <p>lorem ipsum dolor bla bla bla...</p>
+                    </td>
+                    
+                </tr>
+                <tr class="bottom">
+                    <td><button onclick="superFonction()">DON'T CLICK!</button></td>
+                    <td><strong>X</strong><br/>things</td>
+                    <td><strong>Y</strong><br/>items</td>
+                    <td><strong>Z</strong><br/>stuffs</td>
+                </tr>
+                
+            </table>
+            
+            <button id="hiddenButton" style="display:none" onclick="superFonction2()">okay, sorry...</button>
+            
+        </section>
+        
+    </body>
+    
+</html>
+                
